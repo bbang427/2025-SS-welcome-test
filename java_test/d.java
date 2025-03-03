@@ -1,9 +1,23 @@
 package java_test;
+import java.util.Scanner;
 
 public class d {
     public static void main(String[] args) {
 
-        // 이 부분에 code를 작성해주세요!
+        Scanner scanner = new Scanner(System.in);
+        
+        int num = scanner.nextInt();
+        
+        if (num >= 1) {
+            long sum = 0;
+            for (long i = num; i >= 1; i--) {
+                sum += i;
+            }
+            System.out.print(sum);
+        } else {
+            System.out.println("X");
+        }
+
 
     }
 
